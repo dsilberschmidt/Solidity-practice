@@ -16,4 +16,7 @@ describe("Contract", function () {
   // it ( "should have an z", async () => {
   //   assert.equal (await contract.z(), 5)
   // });
+  it ( "should increment x by 1", async() => {
+    assert.equal (await contract.increment(), 51)
+  });
 });
