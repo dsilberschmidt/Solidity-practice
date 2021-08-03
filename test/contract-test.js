@@ -20,4 +20,10 @@ describe("Contract", function () {
     await contract.increment();
     assert.equal (await contract.x(), 51)
   });
+  it ( "should increment x many times", async() => {
+    await contract.increment();
+    await contract.increment();
+    await contract.increment();
+    assert.equal (await contract.x(), 54)
+  });
 });
